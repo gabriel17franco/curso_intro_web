@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstração das 16 cores</title>
+    <style>
+        h1, h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            font-style: normal;
+            color: whitesmoke
+        }
+        
+        div#quadro{
+            background-color: whitesmoke;
+            font: normal 25pt Arial;        
+            color: royalblue;
+            width: 300px;
+            height: 300px;
+            line-height: 200px;
+            text-align: center;
+        }
+        
+        body{
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demonstração das 16 cores básicas nomeadas pela W3C</h1>
+    <h2>Clique no quadrado para alternar as cores.. </h2>    
+
+    <div id = "quadro">
+        Interaja...
+    </div>    
+
+<script>
+var cores = ["#FF0000", "#000000", "#C0C0C0","#808080", "#FFFFFF",  //vetor com os cód das cores
+"#800000", "#800080", "#FF00FF", "#00FFFF", "#008080", "#0000FF",   
+"#000080", "#FFFF00", "#808000", "#008000", "#00FF00"]  
+
+var nome = ["red", "black", "silver", "gray", "white", "maroon",    //vetor com o nome delas
+"purple", "fuchsia/magenta", "aqua/cian", "teal", "blue", "navi",  
+"yellow", "olive", "green", "lime"]
+
+var i = 0
+var a = window.document.getElementById("quadro")
+        
+a.addEventListener("click", clicar)
+function clicar(){
+    a.innerText = nome[i]
+    a.style.background = cores[i]
+    i++;
+    if(i==15) {
+        i = 0
+    }
+}
+</script>
+
+</body>
+</html>
