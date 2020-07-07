@@ -3,6 +3,6 @@ function info(){
     var aux = new Date()
     var ano = aux.getFullYear()
     var hora = aux.getHours()
-    var minuto = aux.getMinutes()
+    var minuto = aux.getMinutes()    
     temp.innerHTML += `${ano} ${hora}:${minuto}`
 }

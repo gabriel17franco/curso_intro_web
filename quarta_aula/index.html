@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina pessoal do Gabriel</title>
+    <title>Página pessoal do Gabriel</title>
 <script src="./index.js"></script>
 </head>
 <body onload="info()">
     <img src="./imagens/minha_foto.jpg" width="200" weidth ="141" altv="Foto de perfil">
     <div id = "cabecalho">
     <div id="nome">Gabriel L. Franco</div>
-        <p>Me chamo Gabriel, e estou cursando Ciências da Computação no Instituto Federal Farroupilha Campus Frederico
+        <p>Me chamo Gabriel, e estou cursando Ciência da Computação no Instituto Federal Farroupilha Campus Frederico
             Westphalen,<br>curto bastante apredender coisas novas, pratico vários esportes e gosto de assistir
             filmes e séries.</p>
             <ul>
@@ -88,7 +88,7 @@
             <dd>Ensino Fundamental (E.E.E. Gottfried Thomas Westerich)</dd>
             
             <dt>2011 - 2018</dt>
-            <dd>Ensino Fundamental (E.E.E. Gottfried Thomas Westerich)</dd>
+            <dd>Ensino Médio (E.E.E. Gottfried Thomas Westerich)</dd>
 
             <dt>2019 - Atual</dt>
             <dd>Bacharelado em Ciência da Computação (IFFAR - Frederico Westphalen)</dd>
@@ -144,7 +144,16 @@
 
     <section id= "contato">
         <h4>Contato</h4>
-            <img src="./imagens/obras.png" alt="obras" width="150px" height="150px">
+            <form action="http://inf.fw.iffarroupilha.edu.br/~bruno/form/formulario.php" method="POST">
+                <label for="nome"> Nome: </label><br>
+                <input type="text" name="nome" id="nome"><br>
+                <label for="email"> Email: </label><br>
+                <input type="text" name="email" id="email"><br>
+                <label for="mensagem"> Mensagem: </label><br>
+                <textarea name="mensagem" id="mensagem" rows="10"></textarea><br>
+                <input type="hidden" name="sendto" value="gabriel17franco@gmail.com">
+                <button type="submit">Enviar: </button>
+            </form>
     </section>
 </div>
 </div>
