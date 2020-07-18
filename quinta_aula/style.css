@@ -1,0 +1,94 @@
+body{
+    background-color: #bcbcbc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #616161;
+    font-size: 1em;
+}
+
+div.container {
+    background-color: #ffffff;
+}
+
+div.profile-name {
+    color: #14cba8;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.profile-contend li a {
+    line-height: 1em;
+    text-decoration: none;
+    color: 616161;
+}
+
+div.profile-contend li a:hover {
+text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #64ffda;
+}
+nav li a {
+    color: #616161;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background-color: #14cba8;
+}
+
+section {
+    background-color: #fbf8f8;
+}
+section h4 {
+    color: #14cba8;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 2em;
+}
+
+thead {
+    background-color: #14cba8;
+    line-height: 2em;
+    color: #fbf8f8;
+}
+
+tbody tr {
+    background-color: #eeeeee;
+}
+
+tbody tr:nth-child(even){
+    background-color: #ddd;
+}
+
+form input {
+    border: 1px solid #14cba8;
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+form textarea {
+    border: 1px solid #14cba8;
+    line-height: 2em;
+}
+
+form button {
+    border: 1px solid  #64ffda;
+    background-color: #64ffda;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #616161;
+    line-height: 2m;
+}
+
+form button:hover {
+    border: 1px solid #14cba8;
+    background-color: #14cba8;
+    color: #fbf8f8;
+}
